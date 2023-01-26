@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import './styles.css';
+import './style.css';
 
 function test() {
     const ele = document.getElementById("container")
