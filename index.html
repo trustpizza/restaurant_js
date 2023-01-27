@@ -8,7 +8,7 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-  <div id="container" class="h-screen">
+  <div id="container" class="h-screen flex flex-col">
     <header>
           <!-- Navbar -->
       <nav class="bg-blue-50 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
@@ -47,11 +47,13 @@
       </div>
       <!-- Jumbotron -->
     </header>
-    <div id="body">
-      <div id="home"></div>
-      <div id="menu"></div>
-      <div id="about"></div>
-      <div id="contact"></div>
+    <div id="body" class="bg-blue-50 flex-1 flex flex-col">
+      <div id="home" class="container flex-1">
+        Hello
+      </div>
+      <div id="menu" class="hidden flex-1"> Hello </div>
+      <div id="about" class="hidden"></div>
+      <div id="contact" class="hidden"></div>
     </div>
   </div>
 </body>
