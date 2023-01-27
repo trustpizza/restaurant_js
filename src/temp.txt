@@ -1,8 +1,0 @@
- <h2 class="text-2xl font-medium underline">A Little About Us</h2>
-              <p>
-                We are a small business started in 2018 focusing on bringing the joys of wild Maine blueberries
-                all over New England.  Located on Isle Au Haut, an Island off the coast of Maine, we offer a Bed
-                and Breakfast to those who wish to enjoy the bucolic scenery of our island farm.  We also ship
-                our blueberries, maple syrup, and farmhouse goods all over New England.  Find us in your local
-                grocery store or stop by for a weekend getaway!
-              </p>
