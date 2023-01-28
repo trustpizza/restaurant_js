@@ -25,7 +25,11 @@ const navbar = () => {
     // NavBar Left Side End
 
     // Navbar Right Side Start
+    const rightDiv = document.createElement("div");
+    rightDiv.classList.add("hidden", "w-full", "md:block", "md:w-auto");
+    rightDiv.id = "navbar-default";
 
+    containerDiv.appendChild(rightDiv);
     // Hamburger Menu
     let hamburgerButton = document.createElement("button");
     hamburgerButton.id = "hamburger-btn";
@@ -65,7 +69,7 @@ const navbar = () => {
     let menuLink = createListItem("Menu", list);
     let contactLink = createListItem("Contact", list);
     // Navbar Right Side End
-    containerDiv.appendChild(list)
+    rightDiv.appendChild(list)
 };
 
 function createListItem(title, list, link ="#") {
