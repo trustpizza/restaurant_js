@@ -1,4 +1,5 @@
 import Blueberry from "./photos/blueberry.png";
+// import Menu from "./photos/menu.svg";
 
 const navbar = () => {
     // Main Navbar Element
@@ -17,10 +18,8 @@ const navbar = () => {
 
     let navImage = new Image();
     navImage.src = Blueberry;
-    //let navImage = document.createElement("img");
-    // navImage.src = "../src/photos/blueberry.png";
     navImage.classList.add("h-6", "mr-3", "sm:h-9");
-    navImageLink.appendChild(navImage);
+    //navImageLink.appendChild(navImage);
 
     let navSpan = document.createElement("span");
     navSpan.classList.add("self-center", "text-xl", "font-semibold", "whitespace-nowrap", "dark:text-white");
@@ -48,23 +47,18 @@ const navbar = () => {
     btnSpan.textContent = "Open Main Menu";
     hamburgerButton.appendChild(btnSpan);
 
-    // btnSVG.classList.add("w-6", "h-6");
 
-    // btnSVG.setAttribute("aria-hidden", "true");
-    // btnSVG.setAttribute("fill", "currentColor");
-    // btnSVG.setAttribute("viewBox", "0 0 24 24");
+    //let btnSVG = new SVGAElement();
     
-    // hamburgerButton.appendChild(btnSVG);
-
-    document.body.appendChild(btnSVG);
-
-    let path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-    path.setAttributeNS(null, "fill-rule", "evenodd");
-    path.setAttributeNS(null, "d", "M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z");
-    path.setAttributeNS(null, "clip-rule", "evenodd");
-    btnSVG.appendChild(path);
+    //btnSVG.src = Menu;
+    //btnSVG.classList.add("w-6", "h-6");
     
-    containerDiv.appendChild(hamburgerButton);
+    
+    //hamburgerButton.appendChild(btnSVG);
+
+    // document.body.appendChild(btnSVG);
+    
+    // containerDiv.appendChild(hamburgerButton);
     //Hamburger Menu End (Broken atm);
 
     let list = document.createElement("ul");
