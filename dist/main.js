@@ -129,17 +129,6 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
-/***/ "./src/dropdown-menu.js":
-/*!******************************!*\
-  !*** ./src/dropdown-menu.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"hamburgerMenu\": () => (/* binding */ hamburgerMenu)\n/* harmony export */ });\nconst hamburgerMenu = () => {\n    let btn = document.getElementById(\"hamburger-btn\");\n    let menu = document.getElementById(\"navbar-default\");\n\n    function show(element) {\n        element.classList.remove(\"hidden\");\n    }\n\n    function hide(element) {\n        element.classList.add(\"hidden\");\n    }\n\n    function showOrHide(element) {\n        if (element.classList.contains(\"hidden\")) {\n            show(element);\n        } else {\n            hide(element)\n        }\n    }\n\n    btn.addEventListener(\"click\", () => {\n        showOrHide(menu);\n    } )\n}\n\n\n\n//# sourceURL=webpack://restaurant_js/./src/dropdown-menu.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -147,7 +136,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _photos_blueberry_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./photos/blueberry.png */ \"./src/photos/blueberry.png\");\n/* harmony import */ var _photos_stars_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./photos/stars.jpg */ \"./src/photos/stars.jpg\");\n/* harmony import */ var _dropdown_menu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dropdown-menu */ \"./src/dropdown-menu.js\");\n\n\n\n\n\n// JS Files\n\n(0,_dropdown_menu__WEBPACK_IMPORTED_MODULE_4__.hamburgerMenu)();\n\n//# sourceURL=webpack://restaurant_js/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _photos_blueberry_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./photos/blueberry.png */ \"./src/photos/blueberry.png\");\n/* harmony import */ var _photos_stars_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./photos/stars.jpg */ \"./src/photos/stars.jpg\");\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n\n\n\n\n\n// JS Files\n\n(0,_navbar__WEBPACK_IMPORTED_MODULE_4__.navbar)();\n\n//import { hamburgerMenu } from './dropdown-menu';\n//hamburgerMenu();\n\n\n\n//# sourceURL=webpack://restaurant_js/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/navbar.js":
+/*!***********************!*\
+  !*** ./src/navbar.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"navbar\": () => (/* binding */ navbar)\n/* harmony export */ });\nconst navbar = () => {\n    let nav = document.createElement(\"nav\");\n    nav.classList.add(\"z-20\", \"sticky\" , \"top\", \"bg-blue-50\", \"border-gray-200\", \"px-2\", \"sm:px04\", \"py-2.5\", \"rounded\", \"dark:bg-gray-900\");\n\n    let containerDiv = document.createElement(\"div\");\n    containerDiv.classList.add(\"container\", \"flex\", \"flex-wrap\", \"items-center\", \"justify-between\", \"mx-auto\");\n\n    let navImageLink = document.createElement(\"a\");\n    navImageLink.classList.add(\"flex\", \"items-center\");\n\n    let navImage = document.createElement(\"img\");\n    navImage.src = \"../src/photos/blueberry.png\";\n    navImage.classList.add(\"h-6\", \"mr-3\", \"sm:h-9\");\n\n    let navSpan = document.createElement(\"span\");\n    navSpan.classList.add(\"self-center\", \"text-xl\", \"font-semibold\", \"whitespace-nowrap\", \"dark:text-white\");\n\n    navSpan.textContent = \"The Blueberry Bodega\";\n};\n\n\n\n//# sourceURL=webpack://restaurant_js/./src/navbar.js?");
 
 /***/ }),
 
