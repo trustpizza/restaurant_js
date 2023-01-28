@@ -1,4 +1,5 @@
 import Blueberry from "./photos/blueberry.png";
+import './style.css';
 // import Menu from "./photos/menu.svg";
 
 const navbar = () => {
