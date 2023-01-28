@@ -33,7 +33,7 @@ const navbar = () => {
     hamburgerButton.setAttribute("aria-expanded", "false");
     hamburgerButton.setAttribute("aria-controls", "navbar-default");
     hamburgerButton.setAttribute("data-collapse-toggle", "navbar-default");
-    hamburgerButton.classList.add( "inline-flex", "items-center", "p-2", "ml-3","text-sm", "text-gray-500", "rounded-lg", "hover:bg-gray-100", "focus:outline-none", "focus:ring-2", "focus:ring-gray-200", "dark:text-gray-400", "dark:hover:bg-gray-700", "dark:focus:ring-gray-600");
+    hamburgerButton.classList.add( "inline-flex", "items-center", "p-2", "ml-3","text-sm", "text-gray-500", "rounded-lg", "hover:bg-gray-100", "focus:outline-none", "focus:ring-2", "focus:ring-gray-200", "md:hidden", "dark:text-gray-400", "dark:hover:bg-gray-700", "dark:focus:ring-gray-600");
 
     let btnSpan = document.createElement("span");
     btnSpan.classList.add("sr-only");
@@ -56,7 +56,27 @@ const navbar = () => {
     btnSVG.appendChild(path);
     
     containerDiv.appendChild(hamburgerButton);
+    //Hamburger Menu End (Broken atm);
+
+    let list = document.createElement("ul");
+    list.classList.add("flex", "flex-col", "p-4", "mt-4","border", "border-gray-100", "rounded-lg", "bg-gray-50", "md:flex-row", "md:space-x-8", "md:mt-0", "md:text-sm", "md:font-medium", "md:border-0", "md:bg-white", "dark:bg-gray-800", "md:dark:bg-gray-900", "dark:border-gray-700");
+
+    let homeLink = createListItem("Home", list);
+    let menuLink = createListItem("Menu", list);
+    let contactLink = createListItem("Contact", list);
     // Navbar Right Side End
+    containerDiv.appendChild(list)
 };
+
+function createListItem(title, list, link ="#") {
+    let a = document.createElement("a");
+
+    a.href = link;
+    a.classList.add("block", "py-2", "pl-3", "pr-4", "text-gray-700", "rounded", "hover:bg-gray-100", "md:hover:bg-transparent", "md:border-0", "md:hover:text-blue-700", "md:p-0", "dark:text-gray-400", "md:dark:hover:text-white", "dark:hover:bg-gray-700", "dark:hover:text-white", "md:dark:hover:bg-transparent");
+    a.textContent = title;
+
+    
+    list.appendChild(a);
+}
 
 export { navbar }
