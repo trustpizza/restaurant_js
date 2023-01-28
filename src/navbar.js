@@ -49,10 +49,10 @@ const navbar = () => {
     
     hamburgerButton.appendChild(btnSVG);
 
-    let path = document.createElement("path");
-    path.setAttribute("fill-rule", "evenodd");
-    path.setAttribute("d", "M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z");
-    path.setAttribute("clip-rule", "evenodd");
+    let path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path.setAttributeNS(null, "fill-rule", "evenodd");
+    path.setAttributeNS(null, "d", "M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z");
+    path.setAttributeNS(null, "clip-rule", "evenodd");
     btnSVG.appendChild(path);
     
     containerDiv.appendChild(hamburgerButton);
