@@ -1,3 +1,5 @@
+import Blueberry from "./photos/blueberry.png";
+
 const navbar = () => {
     // Main Navbar Element
     let nav = document.getElementById("nav");
@@ -13,8 +15,10 @@ const navbar = () => {
     navImageLink.classList.add("flex", "items-center");
     containerDiv.appendChild(navImageLink);
 
-    let navImage = document.createElement("img");
-    navImage.src = "../src/photos/blueberry.png";
+    let navImage = new Image();
+    navImage.src = Blueberry;
+    //let navImage = document.createElement("img");
+    // navImage.src = "../src/photos/blueberry.png";
     navImage.classList.add("h-6", "mr-3", "sm:h-9");
     navImageLink.appendChild(navImage);
 
@@ -44,14 +48,15 @@ const navbar = () => {
     btnSpan.textContent = "Open Main Menu";
     hamburgerButton.appendChild(btnSpan);
 
-    let btnSVG = document.createElement("svg");
-    btnSVG.classList.add("w-6", "h-6");
-    btnSVG.setAttribute("aria-hidden", "true");
-    btnSVG.setAttribute("fill", "currentColor");
-    btnSVG.setAttribute("viewBox", "0 0 24 24");
-    btnSVG.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    // btnSVG.classList.add("w-6", "h-6");
+
+    // btnSVG.setAttribute("aria-hidden", "true");
+    // btnSVG.setAttribute("fill", "currentColor");
+    // btnSVG.setAttribute("viewBox", "0 0 24 24");
     
-    hamburgerButton.appendChild(btnSVG);
+    // hamburgerButton.appendChild(btnSVG);
+
+    document.body.appendChild(btnSVG);
 
     let path = document.createElementNS("http://www.w3.org/2000/svg", "path");
     path.setAttributeNS(null, "fill-rule", "evenodd");
