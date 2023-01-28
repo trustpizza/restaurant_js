@@ -3,3 +3,6 @@ import './style.css';
 import Blueberry from "./photos/blueberry.png";
 import Stars from "./photos/stars.jpg";
 
+// JS Files
+import { hamburgerMenu } from './dropdown-menu';
+hamburgerMenu();
