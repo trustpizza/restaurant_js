@@ -20,7 +20,7 @@ const navbar = () => {
     let navImage = new Image();
     navImage.src = Blueberry;
     navImage.classList.add("h-6", "mr-3", "sm:h-9");
-    //navImageLink.appendChild(navImage);
+    navImageLink.appendChild(navImage);
 
     let navSpan = document.createElement("span");
     navSpan.classList.add("self-center", "text-xl", "font-semibold", "whitespace-nowrap", "dark:text-white");
