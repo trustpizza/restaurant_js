@@ -3,7 +3,7 @@ const header = () => {
     //document.body.appendChild(header);
 
     let container = document.createElement("div");
-    container.classList.add("background", "text-center", "bg-blue-50", "text-gray-800", "py-20", "px-6", "bg-top");
+    container.classList.add("background", "text-center", "bg-blue-50", "text-gray-800", "px-6");
     
     const title = document.createElement("h1");
     title.textContent = "The Blueberry Bodega";
