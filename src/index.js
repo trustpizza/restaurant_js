@@ -5,8 +5,9 @@ import Stars from "./photos/stars.jpg";
 import { navbar } from './navbar';
 navbar();
 
-//import { hamburgerMenu } from './dropdown-menu';
-//hamburgerMenu();
+import { hamburgerMenu } from './dropdown-menu';
+hamburgerMenu();
+
 import './style.css';
 
 

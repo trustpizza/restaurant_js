@@ -28,11 +28,7 @@ const navbar = () => {
     // NavBar Left Side End
 
     // Navbar Right Side Start
-    const rightDiv = document.createElement("div");
-    rightDiv.classList.add("hidden", "w-full", "md:block", "md:w-auto");
-    rightDiv.id = "navbar-default";
-
-    containerDiv.appendChild(rightDiv);
+    
     // Hamburger Menu
     let hamburgerButton = document.createElement("button");
     hamburgerButton.id = "hamburger-btn";
@@ -56,10 +52,18 @@ const navbar = () => {
     
     hamburgerButton.appendChild(btnSVG);
 
-    // document.body.appendChild(btnSVG);
     
     containerDiv.appendChild(hamburgerButton);
-    //Hamburger Menu End (Broken atm);
+    //Hamburger Menu End;
+
+    // Right Side 
+    const rightDiv = document.createElement("div");
+    rightDiv.classList.add("hidden", "w-full", "md:block", "md:w-auto");
+    rightDiv.id = "navbar-default";
+
+    containerDiv.appendChild(rightDiv);
+
+
 
     let list = document.createElement("ul");
     list.classList.add("flex", "flex-col", "p-4", "mt-4","border", "border-gray-100", "rounded-lg", "bg-gray-50", "md:flex-row", "md:space-x-8", "md:mt-0", "md:text-sm", "md:font-medium", "md:border-0", "md:bg-white", "dark:bg-gray-800", "md:dark:bg-gray-900", "dark:border-gray-700");
