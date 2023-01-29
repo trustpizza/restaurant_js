@@ -8,6 +8,9 @@ navbar();
 import { hamburgerMenu } from './dropdown-menu';
 hamburgerMenu();
 
+import { header } from "./header";
+header();
+
 import './style.css';
 
 
