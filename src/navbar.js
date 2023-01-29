@@ -1,6 +1,5 @@
 import Blueberry from "./photos/blueberry.png";
-import './style.css';
-// import Menu from "./photos/menu.svg";
+import './style.css'; import Menu from "./photos/menu.svg";
 
 const navbar = () => {
     // Main Navbar Element
@@ -41,7 +40,7 @@ const navbar = () => {
     hamburgerButton.setAttribute("aria-expanded", "false");
     hamburgerButton.setAttribute("aria-controls", "navbar-default");
     hamburgerButton.setAttribute("data-collapse-toggle", "navbar-default");
-    hamburgerButton.classList.add( "inline-flex", "items-center", "p-2", "ml-3","text-sm", "text-gray-500", "rounded-lg", "hover:bg-gray-100", "focus:outline-none", "focus:ring-2", "focus:ring-gray-200", "md:hidden", "dark:text-gray-400", "dark:hover:bg-gray-700", "dark:focus:ring-gray-600");
+    hamburgerButton.classList.add("inline-flex", "items-center", "p-2", "ml-3","text-sm", "text-gray-500", "rounded-lg", "hover:bg-gray-100", "focus:outline-none", "focus:ring-2", "focus:ring-gray-200", "md:hidden", "dark:text-gray-400", "dark:hover:bg-gray-700", "dark:focus:ring-gray-600");
 
     let btnSpan = document.createElement("span");
     btnSpan.classList.add("sr-only");
@@ -49,17 +48,17 @@ const navbar = () => {
     hamburgerButton.appendChild(btnSpan);
 
 
-    //let btnSVG = new SVGAElement();
+    let btnSVG = new Image();
     
-    //btnSVG.src = Menu;
-    //btnSVG.classList.add("w-6", "h-6");
+    btnSVG.src = Menu;
+    btnSVG.classList.add("w-6", "h-6");
     
     
-    //hamburgerButton.appendChild(btnSVG);
+    hamburgerButton.appendChild(btnSVG);
 
     // document.body.appendChild(btnSVG);
     
-    // containerDiv.appendChild(hamburgerButton);
+    containerDiv.appendChild(hamburgerButton);
     //Hamburger Menu End (Broken atm);
 
     let list = document.createElement("ul");
