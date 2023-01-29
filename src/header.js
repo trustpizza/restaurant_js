@@ -1,5 +1,3 @@
-import Background from "./photos/cabin.jpg";
-
 const header = () => {
     const header = document.querySelector("header");
     document.body.appendChild(header);
@@ -10,14 +8,14 @@ const header = () => {
     const title = document.createElement("h1");
     title.textContent = "The Blueberry Bodega";
     title.classList.add("text-6xl", "font-bold", "mt-0", "mb-6", "text-black");
-    container.append(title);
+    container.appendChild(title);
 
     const subittle = document.createElement("h3");
     subittle.textContent = "A Bed and Breakfast";
     subittle.classList.add("text-4xl", "font-bold", "mb-8", "text-black");
-    container.append(subittle);
+    container.appendChild(subittle);
 
-    header.append(container);
+    header.appendChild(container);
 };
 
 export { header }; 

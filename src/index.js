@@ -1,5 +1,4 @@
 import _ from 'lodash';
-import Stars from "./photos/stars.jpg";
 
 // JS Files
 import { navbar } from './navbar';
@@ -13,7 +12,7 @@ import { header } from "./header";
 import './style.css';
 
 // Building page
-// const container = document.getElementById("container");
-// const header = header();
-// console.log(container);
-// container.append(header);
+const container = document.getElementById("container");
+
+//console.log(header());
+container.appendChild(header());

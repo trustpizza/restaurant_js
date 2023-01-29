@@ -27,7 +27,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"header\": () => (/* binding */ header)\n/* harmony export */ });\n/* harmony import */ var _photos_cabin_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./photos/cabin.jpg */ \"./src/photos/cabin.jpg\");\n\nvar header = function header() {\n  var header = document.querySelector(\"header\");\n  document.body.appendChild(header);\n  var container = document.createElement(\"div\");\n  container.classList.add(\"background\", \"text-center\", \"bg-blue-50\", \"text-gray-800\", \"py-20\", \"px-6\", \"bg-top\");\n  var title = document.createElement(\"h1\");\n  title.textContent = \"The Blueberry Bodega\";\n  title.classList.add(\"text-6xl\", \"font-bold\", \"mt-0\", \"mb-6\", \"text-black\");\n  container.append(title);\n  var subittle = document.createElement(\"h3\");\n  subittle.textContent = \"A Bed and Breakfast\";\n  subittle.classList.add(\"text-4xl\", \"font-bold\", \"mb-8\", \"text-black\");\n  container.append(subittle);\n  header.append(container);\n};\n\n\n//# sourceURL=webpack://restaurant_js/./src/header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"header\": () => (/* binding */ header)\n/* harmony export */ });\nvar header = function header() {\n  var header = document.querySelector(\"header\");\n  document.body.appendChild(header);\n  var container = document.createElement(\"div\");\n  container.classList.add(\"background\", \"text-center\", \"bg-blue-50\", \"text-gray-800\", \"py-20\", \"px-6\", \"bg-top\");\n  var title = document.createElement(\"h1\");\n  title.textContent = \"The Blueberry Bodega\";\n  title.classList.add(\"text-6xl\", \"font-bold\", \"mt-0\", \"mb-6\", \"text-black\");\n  container.appendChild(title);\n  var subittle = document.createElement(\"h3\");\n  subittle.textContent = \"A Bed and Breakfast\";\n  subittle.classList.add(\"text-4xl\", \"font-bold\", \"mb-8\", \"text-black\");\n  container.appendChild(subittle);\n  header.appendChild(container);\n};\n\n\n//# sourceURL=webpack://restaurant_js/./src/header.js?");
 
 /***/ }),
 
@@ -38,7 +38,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _photos_stars_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./photos/stars.jpg */ \"./src/photos/stars.jpg\");\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n/* harmony import */ var _dropdown_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dropdown-menu */ \"./src/dropdown-menu.js\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n// JS Files\n\n(0,_navbar__WEBPACK_IMPORTED_MODULE_2__.navbar)();\n\n(0,_dropdown_menu__WEBPACK_IMPORTED_MODULE_3__.hamburgerMenu)();\n\n\n\n// Building page\n// const container = document.getElementById(\"container\");\n// const header = header();\n// console.log(container);\n// container.append(header);\n\n//# sourceURL=webpack://restaurant_js/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n/* harmony import */ var _dropdown_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dropdown-menu */ \"./src/dropdown-menu.js\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n// JS Files\n\n(0,_navbar__WEBPACK_IMPORTED_MODULE_1__.navbar)();\n\n(0,_dropdown_menu__WEBPACK_IMPORTED_MODULE_2__.hamburgerMenu)();\n\n\n\n// Building page\nvar container = document.getElementById(\"container\");\n\n//console.log(header());\ncontainer.appendChild((0,_header__WEBPACK_IMPORTED_MODULE_3__.header)());\n\n//# sourceURL=webpack://restaurant_js/./src/index.js?");
 
 /***/ }),
 
@@ -184,17 +184,6 @@ eval("module.exports = __webpack_require__.p + \"cf04701deb23edbbdfbb.png\";\n\n
 
 /***/ }),
 
-/***/ "./src/photos/cabin.jpg":
-/*!******************************!*\
-  !*** ./src/photos/cabin.jpg ***!
-  \******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"6f98b9a011f18134766a.jpg\";\n\n//# sourceURL=webpack://restaurant_js/./src/photos/cabin.jpg?");
-
-/***/ }),
-
 /***/ "./src/photos/menu.svg":
 /*!*****************************!*\
   !*** ./src/photos/menu.svg ***!
@@ -203,17 +192,6 @@ eval("module.exports = __webpack_require__.p + \"6f98b9a011f18134766a.jpg\";\n\n
 
 "use strict";
 eval("module.exports = __webpack_require__.p + \"01afef4c52d7b66a6a16.svg\";\n\n//# sourceURL=webpack://restaurant_js/./src/photos/menu.svg?");
-
-/***/ }),
-
-/***/ "./src/photos/stars.jpg":
-/*!******************************!*\
-  !*** ./src/photos/stars.jpg ***!
-  \******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"1dde5db47ad609829428.jpg\";\n\n//# sourceURL=webpack://restaurant_js/./src/photos/stars.jpg?");
 
 /***/ })
 
