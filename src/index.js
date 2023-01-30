@@ -9,12 +9,13 @@ import { hamburgerMenu } from './dropdown-menu';
 hamburgerMenu();
 
 import { header } from "./header";
- header();
+const HEADER = header().container;
+console.log(HEADER);
 
 // Building page
 const container = document.getElementById("container");
 const BODY = document.getElementById("body");
 
 import { pageFactory } from './page-factory';
-const HOME = pageFactory("main", 2);
-BODY.appendChild(HOME.main);
+const HOME = pageFactory("main", 2).main;
+BODY.appendChild(HOME);

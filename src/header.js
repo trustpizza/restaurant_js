@@ -1,5 +1,4 @@
 const header = () => {
-    const header = document.querySelector("header");
     //document.body.appendChild(header);
 
     let container = document.createElement("div");
@@ -15,9 +14,7 @@ const header = () => {
     subittle.classList.add("text-4xl", "font-bold","pb-6", "text-black");
     container.appendChild(subittle);
 
-    header.appendChild(container);
-
-    return { header };
+    return { container };
 };
 
 export { header }; 
