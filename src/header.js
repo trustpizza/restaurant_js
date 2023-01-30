@@ -16,6 +16,8 @@ const header = () => {
     container.appendChild(subittle);
 
     header.appendChild(container);
+
+    return { header };
 };
 
 export { header }; 
