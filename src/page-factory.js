@@ -1,4 +1,4 @@
-const body = document.querySelector("#main");
+const main = document.querySelector("#main");
 
 const pageFactory = (count) => {
 
@@ -14,6 +14,6 @@ const divFactory = () => {
     innerDiv.classList.add("flex", "flex-col", "items-center", "bg-blue-200", "box-border", "min-h-fit", "w-11/12", "md:inner-octagon", "md:p-5", "gap-2", "rounded");
 
     outerDiv.appendChild(innerDiv);
-    body.appendChild(outerDiv);
+    main.appendChild(outerDiv);
 };
 
