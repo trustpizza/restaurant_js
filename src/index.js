@@ -13,4 +13,8 @@ import { header } from "./header";
 
 // Building page
 const container = document.getElementById("container");
-container.appendChild(header());  // Builds header/Title
+// container.appendChild(header());  // Builds header/Title
+
+import { pageFactory } from './page-factory';
+const home = pageFactory("main", 2);
+console.log(home.main);
