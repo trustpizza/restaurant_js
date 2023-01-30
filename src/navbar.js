@@ -1,5 +1,7 @@
 import Blueberry from "./photos/blueberry.png";
 import './style.css'; import Menu from "./photos/menu.svg";
+import { hamburgerMenu } from './dropdown-menu';
+
 
 const navbar = () => {
     // Main Navbar Element
@@ -85,5 +87,8 @@ function createListItem(title, list, link ="#") {
     
     list.appendChild(a);
 }
+
+const NAVBAR = navbar();
+hamburgerMenu();
 
 export { navbar }
