@@ -4,7 +4,7 @@ const pageFactory = (name, count) => {
     const main = document.createElement("div");
     main.id = name;
     
-    main.classList.add("bg-blue-100", "flex-1", "flex", "flex-col", "md:px-20", "md:py-2");
+    main.classList.add("bg-white", "flex", "flex-1", "rounded-md", "flex-col", "justify-between", "py-2", "items-center", "gap-4", "justify-around");
     for (let i = 0; i < count; i++) {
         const div = divFactory();
 
