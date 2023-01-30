@@ -16,5 +16,5 @@ const container = document.getElementById("container");
 // container.appendChild(header());  // Builds header/Title
 
 import { pageFactory } from './page-factory';
-const home = pageFactory("main", 2);
-console.log(home.main);
+const HOME = pageFactory("main", 2);
+container.appendChild(HOME.main);

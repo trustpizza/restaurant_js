@@ -5,11 +5,12 @@ const pageFactory = (name, count) => {
     main.id = name;
     
     main.classList.add("bg-blue-100", "flex-1", "flex", "flex-col", "md:px-20", "md:py-2");
+    for (let i = 0; i < count; i++) {
+        const div = divFactory();
 
-    for (let i = 0; i < count.length; i++) {
-        let div = divFactory(main);
-        main.appendChild(div);
+        main.appendChild(div.outerDiv);
     };
+
     return { main }
 };
 
@@ -23,6 +24,7 @@ const divFactory = () => {
     innerDiv.classList.add("flex", "flex-col", "items-center", "bg-blue-200", "box-border", "min-h-fit", "w-11/12", "md:inner-octagon", "md:p-5", "gap-2", "rounded");
 
     outerDiv.appendChild(innerDiv);
+    return { outerDiv }
 };
 
 export { pageFactory };
