@@ -21,7 +21,20 @@ title1.textContent = "Hours of Operation"
 title1.classList.add("pl-4", "text-2xl", "font-medium", "underline");
 SECTION1.appendChild(title1);
 
+// Add all the days (there has to be a better way!)
+const paragraphFactory = (text) => {
+    let p = document.createElement("p");
+    p.textContent = text;
+    p.classList.add("text-center", "text-xl");
 
+    return { p }
+};
+
+let days = ["Sunday: 8am - 4pm", "Monday: 6am - 4pm", "Tuesday: 6am - 4pm", "Wednesday: 6am - 4pm", "Thursday: 6am - 4pm", "Friday: Gone Hiking", "Saturday: Gone Fishing"]
+days.forEach(day => {
+    let p = paragraphFactory(day).p
+    SECTION1.appendChild(p)
+}); 
 console.log(SECTION1);
 
 
