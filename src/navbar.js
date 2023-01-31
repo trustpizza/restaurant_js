@@ -88,7 +88,7 @@ function createListItem(title, list, link ="#") {
     list.appendChild(a);
 }
 
-const NAVBAR = navbar();
+navbar();
 hamburgerMenu();
 
 export { navbar }
