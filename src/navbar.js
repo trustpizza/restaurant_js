@@ -65,14 +65,13 @@ const navbar = () => {
 
     containerDiv.appendChild(rightDiv);
 
-
-
     let list = document.createElement("ul");
     list.classList.add("flex", "flex-col", "p-4", "mt-4","border", "border-gray-100", "rounded-lg", "bg-gray-50", "md:flex-row", "md:space-x-8", "md:mt-0", "md:text-sm", "md:font-medium", "md:border-0", "md:bg-white", "dark:bg-gray-800", "md:dark:bg-gray-900", "dark:border-gray-700");
+    list.setAttribute("name", "navbar");
 
-    let homeLink = createListItem("Home", list);
-    let menuLink = createListItem("Menu", list);
-    let contactLink = createListItem("Contact", list);
+    createListItem("Home", list);
+    createListItem("Menu", list);
+    createListItem("Contact", list);
     // Navbar Right Side End
     rightDiv.appendChild(list)
 };
@@ -82,6 +81,7 @@ function createListItem(title, list, link ="#") {
 
     a.href = link;
     a.classList.add("block", "py-2", "pl-3", "pr-4", "text-gray-700", "rounded", "hover:bg-gray-100", "md:hover:bg-transparent", "md:border-0", "md:hover:text-blue-700", "md:p-0", "dark:text-gray-400", "md:dark:hover:text-white", "dark:hover:bg-gray-700", "dark:hover:text-white", "md:dark:hover:bg-transparent");
+    a.setAttribute("name", title);
     a.textContent = title;
 
     
