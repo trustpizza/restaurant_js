@@ -8,6 +8,7 @@ const homeButtonLogic = () => {
 
     btn.addEventListener("click", () => {
 //        page.innerHTML = homePage();
+        // Need a reset function before triggering page!
         homePage();
         console.log(page);      
     })
