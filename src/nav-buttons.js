@@ -8,11 +8,8 @@ const homeButtonLogic = () => {
     let btn = allButtons[0];
 
     btn.addEventListener("click", () => {
-//        page.innerHTML = homePage();
-        // Need a reset function before triggering page!
         resetPageBody();
-        //homePage(CONTAINER);
-        //console.log(page);      
+        homePage(CONTAINER);   
     })
 };
 
@@ -21,9 +18,11 @@ const menuButtonLogic = () => {
     let btn = allButtons[1];
 
     btn.addEventListener("click", () => {
-        console.log('hi');
+        //resetPageBody();
+        resetPageBody();
     })
 }
+
 
 const contactButtonLogic = () => {
     let allButtons = document.getElementsByName("navbar")[0].children;
