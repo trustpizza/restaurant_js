@@ -1,5 +1,3 @@
-//const main = document.querySelector("#main");
-
 const pageFactory = (name, count) => {
     const main = document.createElement("div");
     main.id = name;

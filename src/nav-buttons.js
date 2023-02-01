@@ -1,5 +1,7 @@
 import { homePage } from './home-page';
+import { menuPage } from './menu-page';
 const CONTAINER = document.getElementById("container");
+const BODY = document.getElementById("body");
 
 
 
@@ -19,6 +21,7 @@ const menuButtonLogic = () => {
 
     btn.addEventListener("click", () => {
         resetPageBody();
+        menuPage(CONTAINER);
     })
 }
 

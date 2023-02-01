@@ -1,7 +1,5 @@
 import { pageFactory, divFactory } from './page-factory';
 import { header } from "./header";
-import _ from 'lodash';
-
 
 // Place entire first page into one piece of code
 const homePage = (container) => {
