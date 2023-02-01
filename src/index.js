@@ -8,5 +8,4 @@ import './home-page';
 // Building page
 import { homePage } from './home-page';
 let page = homePage();
-console.log(homePage)
 
