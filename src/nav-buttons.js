@@ -18,7 +18,6 @@ const menuButtonLogic = () => {
     let btn = allButtons[1];
 
     btn.addEventListener("click", () => {
-        //resetPageBody();
         resetPageBody();
     })
 }
@@ -29,7 +28,7 @@ const contactButtonLogic = () => {
     let btn = allButtons[2];
 
     btn.addEventListener("click", () => {
-        console.log('hi');
+        resetPageBody();
     })
 }
 

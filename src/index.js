@@ -11,7 +11,8 @@ let container = document.getElementById("container");
 homePage(container);
 //let page = homePage();
 // Create buttons
-import { homeButtonLogic, menuButtonLogic } from './nav-buttons';
+import { contactButtonLogic, homeButtonLogic, menuButtonLogic } from './nav-buttons';
 const homeButton = homeButtonLogic();
 const menuButton = menuButtonLogic();
+const contactButton = contactButtonLogic();
 
