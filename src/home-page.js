@@ -4,10 +4,11 @@ import _ from 'lodash';
 
 
 // Place entire first page into one piece of code
-const homePage = () => {
+const homePage = (container) => {
     // Creates Header
     const HEADERBODY = header().container;
-    const CONTAINER = document.getElementById("container");
+    const CONTAINER = container;
+
     const HEADER = document.querySelector("header");
     HEADER.appendChild(HEADERBODY);
 
@@ -15,7 +16,8 @@ const homePage = () => {
     const BODY = document.getElementById("body");
     // Building the home page structure/shell items
     const HOME = pageFactory("main", 2).main;
-    // Building first paragraph out to fit the first shell
+    // Building first paragraph out to fit the first shell 
+    
     const SECTION1 = HOME.children[0].firstChild
     let title1 = document.createElement("h2");
     title1.textContent = "A Little About Us";

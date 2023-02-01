@@ -1,6 +1,7 @@
 import { homePage } from './home-page';
-const page = document.getElementById("body");
-//console.log(page)
+const CONTAINER = document.getElementById("container");
+
+
 
 const homeButtonLogic = () => {
     let allButtons = document.getElementsByName("navbar")[0].children;
@@ -9,8 +10,9 @@ const homeButtonLogic = () => {
     btn.addEventListener("click", () => {
 //        page.innerHTML = homePage();
         // Need a reset function before triggering page!
-        homePage();
-        console.log(page);      
+        resetPageBody();
+        //homePage(CONTAINER);
+        //console.log(page);      
     })
 };
 
@@ -30,6 +32,15 @@ const contactButtonLogic = () => {
     btn.addEventListener("click", () => {
         console.log('hi');
     })
+}
+
+function resetPageBody() {
+    let children = CONTAINER.children
+    
+    for (let i = 0; i < children.length; i++) {
+        const element = children[i];
+        element.innerHTML = null;
+    }
 }
 
 
