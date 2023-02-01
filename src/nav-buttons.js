@@ -1,13 +1,15 @@
-const homeButton = () => {
+import { homePage } from './home-page';
+
+const homeButtonLogic = () => {
     let allButtons = document.getElementsByName("navbar")[0].children;
     let btn = allButtons[0];
 
     btn.addEventListener("click", () => {
-        console.log('hi');
+        homePage();
     })
 };
 
-const menuButton = () => {
+const menuButtonLogic = () => {
     let allButtons = document.getElementsByName("navbar")[0].children;
     let btn = allButtons[1];
 
@@ -16,7 +18,7 @@ const menuButton = () => {
     })
 }
 
-const contactButton = () => {
+const contactButtonLogic = () => {
     let allButtons = document.getElementsByName("navbar")[0].children;
     let btn = allButtons[2];
 
@@ -25,11 +27,5 @@ const contactButton = () => {
     })
 }
 
-function initializeNavButtons() {
-    homeButton();
-    menuButton();
-    contactButton();
-}
 
-
-export { initializeNavButtons }
+export { homeButtonLogic, menuButtonLogic, contactButtonLogic }

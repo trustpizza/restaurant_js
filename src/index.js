@@ -7,5 +7,8 @@ import './home-page';
 
 // Building page
 import { homePage } from './home-page';
-let page = homePage();
-
+homePage();
+//let page = homePage();
+// Create buttons
+import { homeButtonLogic } from './nav-buttons';
+const homeButton = homeButtonLogic();
