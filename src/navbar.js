@@ -1,6 +1,8 @@
 import Blueberry from "./photos/blueberry.png";
 import './style.css'; import Menu from "./photos/menu.svg";
 import { hamburgerMenu } from './dropdown-menu';
+import { homeButton } from './nav-buttons';
+
 
 
 const navbar = () => {
