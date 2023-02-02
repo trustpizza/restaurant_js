@@ -14,5 +14,5 @@ homePage(container);
 import { contactButtonLogic, homeButtonLogic, menuButtonLogic } from './nav-buttons';
 const homeButton = homeButtonLogic();
 const menuButton = menuButtonLogic();
-const contactButton = contactButtonLogic();
+// const contactButton = contactButtonLogic();
 

@@ -71,7 +71,7 @@ const navbar = () => {
 
     createListItem("Home", list);
     createListItem("Menu", list);
-    createListItem("Contact", list);
+    // createListItem("Contact", list);
     // Navbar Right Side End
     rightDiv.appendChild(list)
 };
