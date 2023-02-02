@@ -1,4 +1,4 @@
-import { pageFactory, divFactory } from './page-factory';
+import { pageFactory, titleFactory } from './page-factory';
 import { header } from "./header";
 
 // Place entire first page into one piece of code
@@ -17,9 +17,7 @@ const homePage = (container) => {
     // Building first paragraph out to fit the first shell 
     
     const SECTION1 = HOME.children[0].firstChild
-    let title1 = document.createElement("h2");
-    title1.textContent = "A Little About Us";
-    title1.classList.add("text-2xl", "font-medium", "underline");
+    let title1 = titleFactory("h2", "About Us").title;
     SECTION1.appendChild(title1);
 
     let p1 = document.createElement("p");
@@ -28,9 +26,7 @@ const homePage = (container) => {
 
     // Second Section
     const SECTION2 = HOME.children[1].firstChild
-    let title2 = document.createElement("h1");
-    title2.textContent = "Hours of Operation"
-    title2.classList.add("pl-4", "text-2xl", "font-medium", "underline");
+    let title2 = titleFactory("h1", "Hours of Operation").title
     SECTION2.appendChild(title2);
 
     // Add all the days (there has to be a better way!)
@@ -50,5 +46,6 @@ const homePage = (container) => {
 
     BODY.appendChild(HOME);
 };
+
 
 export { homePage }

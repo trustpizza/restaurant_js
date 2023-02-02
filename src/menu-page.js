@@ -1,4 +1,4 @@
-import { pageFactory, divFactory } from './page-factory';
+import { pageFactory, titleFactory } from './page-factory';
 
 const menuPage = (container) => {
     const CONTAINER = container; // Whole Page
@@ -9,9 +9,7 @@ const menuPage = (container) => {
     const SECTION1 = MENU.children[0].firstChild; // Selects the inner menu item to select the text section
 
     // Title of the menu (this can be turned into its own function)
-    let title = document.createElement("h1");
-    title.textContent = "Menu";
-    title.classList.add("text-2xl", "font-medium", "underline");
+    let title = titleFactory('h1', 'Menu').title;
     SECTION1.appendChild(title);
 
     // Menu Section (use simple paragraphs)

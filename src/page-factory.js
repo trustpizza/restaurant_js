@@ -25,4 +25,13 @@ const divFactory = () => {
     return { outerDiv }
 };
 
-export { pageFactory };
+const titleFactory = (type, text) => {
+    let title = document.createElement(type);
+    title.textContent = text;
+    title.classList.add("text-2xl", "font-medium", "underline");
+    //SECTION1.appendChild(title);
+
+    return { title }
+}
+
+export { pageFactory, titleFactory };
