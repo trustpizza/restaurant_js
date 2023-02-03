@@ -1,4 +1,4 @@
-import { pageFactory, titleFactory } from './page-factory';
+import { pageFactory, titleFactory, paragraphFactory } from './page-factory';
 import { header } from "./header";
 
 // Place entire first page into one piece of code
@@ -30,13 +30,7 @@ const homePage = (container) => {
     SECTION2.appendChild(title2);
 
     // Add all the days (there has to be a better way!)
-    const paragraphFactory = (text) => {
-        let p = document.createElement("p");
-        p.textContent = text;
-        p.classList.add("text-center", "text-xl");
-
-        return { p }
-    };
+    
 
     let days = ["Sunday: 8am - 4pm", "Monday: 6am - 4pm", "Tuesday: 6am - 4pm", "Wednesday: 6am - 4pm", "Thursday: 6am - 4pm", "Friday: Gone Hiking", "Saturday: Gone Fishing"]
     days.forEach(day => {

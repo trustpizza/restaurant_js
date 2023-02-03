@@ -32,6 +32,14 @@ const titleFactory = (type, text) => {
     //SECTION1.appendChild(title);
 
     return { title }
-}
+};
 
-export { pageFactory, titleFactory };
+const paragraphFactory = (text) => {
+    let p = document.createElement("p");
+    p.textContent = text;
+    p.classList.add("text-center", "text-xl");
+
+    return { p }
+};
+
+export { pageFactory, titleFactory, paragraphFactory };
